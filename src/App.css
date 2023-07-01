@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #191919;
+}
+
+.title {
+  padding: 4rem 0;
+}
