@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  background-image: url("../../../public/assets/bgmidia20.png");
+  background-color: #000000;
+  background-repeat: repeat;
+  background-size: 100vw;
+  padding: 2rem 4rem;
+
+  .socialTitle {
+    line-height: 4px;
+  }
+}

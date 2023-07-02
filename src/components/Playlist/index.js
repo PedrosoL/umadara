@@ -9,7 +9,7 @@ const Playlist = () => {
   return (
     <Space className={S.container} direction="vertical" size={16}>
       <div style={{ padding: "0 2rem" }}>
-        <Text size={24}>Playlist</Text>
+        <Text size={24}>Letras</Text>
       </div>
 
       <Collapse
