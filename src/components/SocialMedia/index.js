@@ -1,6 +1,6 @@
 import S from "./styles.module.scss";
 
-import { Image, Row, Space } from "antd";
+import { Image, Space } from "antd";
 import Text from "../Text";
 
 const SocialMedia = () => {
