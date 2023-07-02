@@ -1,11 +1,27 @@
 import S from "./styles.module.scss";
 
-import { Space } from "antd";
+import { Collapse, Space } from "antd";
 import { theme } from "../../utils/mock";
 
 import Text from "../Text";
+import { CaretRightOutlined } from "@ant-design/icons";
 
 const Theme = () => {
+  const items = [
+    {
+      key: "1",
+      label: (
+        <Space direction="vertical" size={0}>
+          <Text color="var(--primary-100)" size={12}>
+            Leia o texto na íntegra
+          </Text>
+          <Text>Daniel 3</Text>
+        </Space>
+      ),
+      children: <div className={S.text}>{theme}</div>,
+    },
+  ];
+
   return (
     <Space direction="vertical" size={24} className={S.bible}>
       <Space direction="vertical">
@@ -29,10 +45,17 @@ const Theme = () => {
         </Space>
       </Space>
 
-      <Space direction="vertical" size={8} className={S.text}>
-        <Text>Daniel 3</Text>
-        <div>{theme}</div>
-      </Space>
+      <Collapse
+        ghost
+        bordered={false}
+        expandIcon={({ isActive }) => (
+          <CaretRightOutlined
+            rotate={isActive ? 90 : 0}
+            style={{ color: "white" }}
+          />
+        )}
+        items={items}
+      />
     </Space>
   );
 };
