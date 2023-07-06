@@ -32,7 +32,7 @@ const SocialMedia = () => {
           </Space>
         </a>
 
-        <a href="https://www.facebook.com/umadaraoficial" alt="Facebook">
+        <a href="https://www.facebook.com/umadaraoficial/" alt="Facebook">
           <Space>
             <Image
               preview={false}

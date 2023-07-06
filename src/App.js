@@ -25,6 +25,14 @@ function App() {
         </Space>
       </Text>
 
+      <SocialMedia />
+
+      <Space direction="vertical" align="start" className="hastag">
+        <Text size={16}>
+          <p style={{ margin: 0 }}>#congressoumadara</p>
+        </Text>
+      </Space>
+
       <Playlist />
 
       <Space direction="vertical" align="end" className="hastag">
@@ -34,14 +42,6 @@ function App() {
       </Space>
 
       <Theme />
-
-      <Space direction="vertical" align="start" className="hastag">
-        <Text size={16}>
-          <p style={{ margin: 0 }}>#congressoumadara</p>
-        </Text>
-      </Space>
-
-      <SocialMedia />
 
       <Text size={16}>
         <Space direction="vertical">
